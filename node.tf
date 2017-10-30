@@ -21,7 +21,7 @@ coreos:
 users:
   - name: core
     ssh-authorized-keys:
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmSFQYDxusXRYEOijwWspaPJpeu+XNmkonOJj1thQOFde/38ld6QkWg7bQfknxa6J9xmKkimqu2q6hcbvvU5Yjfjr2s7VHUFJ9jqWgoujlCkRJdVGRXWdU9MWHMODdBd4gtcEH/J3wH9unW7LOuBigwaGmjysJQyIuwUmlAWa8unJzDC2aR2Ifn0JoOeBwNsabkWi5sItXqywB0KMsJZ5LgE5SA95cBGF9wzUfJvNrcz+u0FeaRiliKDU9mX95pq+YWOSxNECQ4NNKJSG3Y/hF+v1VNIvomsYweILdocKvOkfcCMGbwwXP6qHGQu6Tdw0fx++2jBrvvi/qn56VJnssnOqNXooKBIexj/u9Q21q259CktuLdWVHNwq1og6AJnxeeXjU1ZpUwXXio08JwwDDwU10EMp7A/KTpXT3qrSxrjz0r071PmLBoLJ+v6Z2GZe6x6gnD4PTGLD66Hy+qEcN2HYek9sdggwkmjFwJEyheZFd6+/Vbb72ICNVESaVRjO5H+1BqfDzO+xA04P4tstEQaaAP82Oyegw41OIQXckQQfDsKNov2X8buDZDkn0veqU1KS5sJL0Ig2Jt1YFE+bRBb/slZ/utjkGiNkc0PllXpRqXafF7jctAQ4OLY52O99vYCfNjj0/7M2utOvJ5hGw0Jk677pKuNciH4itHyqMcw==
+      - ${var.public_key}
     groups:
       - sudo
       - docker
